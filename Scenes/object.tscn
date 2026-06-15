@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://c4byr0xttpfrs"]
+
+[ext_resource type="Script" uid="uid://cowpk61basvvu" path="res://Scenes/object.gd" id="1_uwcgf"]
+[ext_resource type="Texture2D" uid="uid://y3ndpd5bhsi3" path="res://graphics/objects/tree2.png" id="1_xf5hi"]
+[ext_resource type="Texture2D" uid="uid://boj6kq1t4mduj" path="res://graphics/objects/tree potted.png" id="2_uwcgf"]
+[ext_resource type="Texture2D" uid="uid://cuqeolw7yvunc" path="res://graphics/objects/box3.png" id="3_nqtn1"]
+
+[node name="Object" type="Node2D" unique_id=18971161]
+script = ExtResource("1_uwcgf")
+
+[node name="Tree2" type="Sprite2D" parent="." unique_id=2017677784]
+position = Vector2(918, 381)
+texture = ExtResource("1_xf5hi")
+
+[node name="TreePotted" type="Sprite2D" parent="." unique_id=1709443384]
+position = Vector2(929, 383)
+texture = ExtResource("2_uwcgf")
+
+[node name="Box3" type="Sprite2D" parent="." unique_id=594436471]
+position = Vector2(917, 394)
+texture = ExtResource("3_nqtn1")
