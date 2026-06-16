@@ -14,6 +14,11 @@ config/name="2ND-Project"
 run/main_scene="uid://bet06so1cyfuu"
 config/features=PackedStringArray("4.6", "Forward Plus")
 
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
+
 [editor_plugins]
 
 enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
