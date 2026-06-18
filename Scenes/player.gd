@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 var direction: Vector2 = Vector2(1,0)
-var speed: int = 200
+var speed: int = 115
 
 func _physics_process(_delta: float) -> void:
 	

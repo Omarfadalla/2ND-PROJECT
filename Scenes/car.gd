@@ -1,7 +1,7 @@
 extends Area2D
 
 var direction = Vector2.LEFT
-var speed = 100
+var speed = 150
 var colors = [
 	preload("res://graphics/cars/green.png"),
 	preload("res://graphics/cars/yellow.png"),

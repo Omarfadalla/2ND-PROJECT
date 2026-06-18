@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://c6stuls37unk" path="res://Scenes/title.gd" id="1_q2qps"]
 [ext_resource type="Texture2D" uid="uid://bkgrir378horu" path="res://graphics/player/player_simple.png" id="2_q2qps"]
 [ext_resource type="FontFile" uid="uid://hqpa84d2dqvp" path="res://fonts/Better VCR 9.0.1.ttf" id="3_yosvi"]
+[ext_resource type="Texture2D" uid="uid://ocjfhrelwysu" path="res://graphics/cars/red.png" id="4_yosvi"]
 
 [node name="Title" type="Control" unique_id=172014316]
 layout_mode = 3
@@ -38,7 +39,24 @@ grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("1_fp2oq")
 theme_override_font_sizes/font_size = 140
-text = "Car Chase "
+text = "Well Done !"
+
+[node name="Label8" type="Label" parent="." unique_id=426089402]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.285
+anchor_right = 0.5
+anchor_bottom = 0.285
+offset_left = 24.0
+offset_top = 180.8
+offset_right = 580.0
+offset_bottom = 349.8
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_yosvi")
+theme_override_font_sizes/font_size = 40
+text = "WASTED:D"
 
 [node name="TextureRect" type="TextureRect" parent="." unique_id=1700461072]
 layout_mode = 1
@@ -47,28 +65,216 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
+offset_left = -254.0
+offset_top = -30.0
+offset_right = -167.5
+offset_bottom = 31.5
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(2, 2)
+texture = ExtResource("4_yosvi")
+
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=1467753810]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 15.0
+offset_top = 9.0
+offset_right = 56.16919
+offset_bottom = 54.0
+grow_horizontal = 2
+grow_vertical = 2
+rotation = 1.5707964
+scale = Vector2(2, 2)
 texture = ExtResource("2_q2qps")
+stretch_mode = 4
 
 [node name="Label2" type="Label" parent="." unique_id=690521777]
 layout_mode = 1
-anchors_preset = -1
+anchors_preset = 8
 anchor_left = 0.5
-anchor_top = 0.703
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 0.703
-offset_left = -45.0
-offset_top = -11.5
-offset_right = 45.0
-offset_bottom = 11.5
+anchor_bottom = 0.5
+offset_left = -135.0
+offset_top = 164.0
+offset_right = 135.0
+offset_bottom = 202.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = ExtResource("3_yosvi")
 theme_override_font_sizes/font_size = 30
-text = "Best Score :"
+text = "Best Score:"
+horizontal_alignment = 1
+
+[node name="Label3" type="Label" parent="." unique_id=1427793633]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -73.5
+offset_top = 96.0
+offset_right = 73.5
+offset_bottom = 119.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("3_yosvi")
+theme_override_font_sizes/font_size = 26
+text = "press ESC to replay"
+
+[node name="Label4" type="Label" parent="." unique_id=1234539847]
+layout_mode = 0
+offset_left = 13.0
+offset_right = 105.0
+offset_bottom = 725.0
+text = "|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|"
+
+[node name="Label9" type="Label" parent="." unique_id=207049692]
+layout_mode = 0
+offset_left = 1001.0
+offset_top = 573.0
+offset_right = 1093.0
+offset_bottom = 1298.0
+rotation = 1.5707964
+text = "|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|"
+
+[node name="Label5" type="Label" parent="." unique_id=595365392]
+layout_mode = 0
+offset_left = 1253.0
+offset_top = -9.0
+offset_right = 1345.0
+offset_bottom = 716.0
+text = "|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|"
+
+[node name="Label6" type="Label" parent="." unique_id=1073187118]
+layout_mode = 0
+offset_left = 1244.0
+offset_top = 111.0
+offset_right = 1326.1333
+offset_bottom = 836.0
+rotation = 1.5707964
+text = "|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+"
+
+[node name="Label7" type="Label" parent="." unique_id=884831278]
+layout_mode = 0
+offset_left = 448.0
+offset_top = 109.0
+offset_right = 530.1333
+offset_bottom = 834.0
+rotation = 1.5707964
+text = "|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+"
