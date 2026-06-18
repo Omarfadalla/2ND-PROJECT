@@ -23,6 +23,7 @@
 [ext_resource type="Texture2D" uid="uid://cgvtilagem3np" path="res://graphics/objects/red car.png" id="21_ym3tv"]
 [ext_resource type="Texture2D" uid="uid://b8fq8sgkmu4dx" path="res://graphics/objects/green car.png" id="22_bwj6o"]
 [ext_resource type="Texture2D" uid="uid://cxutqp0hti8vw" path="res://graphics/objects/bench.png" id="23_f3c8l"]
+[ext_resource type="FontFile" uid="uid://hqpa84d2dqvp" path="res://fonts/Better VCR 9.0.1.ttf" id="24_vm72l"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_wrm1d"]
 size = Vector2(20, 644)
@@ -171,6 +172,9 @@ metadata/_edit_lock_ = true
 
 [node name="CarTimer" type="Timer" parent="Timer" unique_id=441185888]
 wait_time = 0.1
+autostart = true
+
+[node name="ScoreTimer" type="Timer" parent="Timer" unique_id=1634913343]
 autostart = true
 
 [node name="Node2D" type="Node2D" parent="." unique_id=54823029]
@@ -862,5 +866,20 @@ polygon = PackedVector2Array(53, 310, 56, 310, 56, 306, 64, 306, 64, 310, 67, 31
 [node name="CollisionPolygon2D8" type="CollisionPolygon2D" parent="Stuff/StaticBody2D" unique_id=1896964221]
 polygon = PackedVector2Array(144, 282, 148, 282, 148, 281, 149, 281, 149, 278, 150, 278, 150, 275, 151, 273, 150.00002, 271.65485, 150, 270, 150.00002, 268.82364, 150, 268, 150.00002, 266.2416, 150, 265, 151, 273, 152, 271, 154, 269, 156, 265, 156, 249, 148, 249, 148, 252, 150, 254, 152, 257, 152, 260, 151.05696, 257.1709, 150, 254, 143, 260, 143, 277, 144, 277, 144, 281)
 
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1399868487]
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=925691916]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -20.0
+offset_right = 20.0
+offset_bottom = 23.0
+grow_horizontal = 2
+pivot_offset = Vector2(-23, 57)
+theme_override_fonts/font = ExtResource("24_vm72l")
+theme_override_font_sizes/font_size = 30
+
 [connection signal="body_entered" from="Borders/FinishArea2D" to="." method="_on_finish_area_2d_body_entered"]
 [connection signal="timeout" from="Timer/CarTimer" to="." method="_on_car_timer_timeout"]
+[connection signal="timeout" from="Timer/ScoreTimer" to="." method="_on_score_timer_timeout"]
