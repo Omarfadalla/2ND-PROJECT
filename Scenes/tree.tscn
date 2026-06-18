@@ -6,6 +6,7 @@
 size = Vector2(11, 19)
 
 [node name="tree2" type="StaticBody2D" unique_id=1637178160]
+collision_mask = 0
 
 [node name="Tree2" type="Sprite2D" parent="." unique_id=2116965946]
 texture = ExtResource("1_yek4j")
