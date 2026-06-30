@@ -43,3 +43,4 @@ finally to downlaod or clone the repo use this code by pasting in terminal:
    git clone [https://github.com/Omarfadalla/2ND-PROJECT.git](https://github.com/Omarfadalla/2ND-PROJECT.git)```
 
 Hope you enjoyed :)
+Use Of Ai is Declared!
