@@ -1,47 +1,45 @@
 # Car Game
 
-You get to be a player in the Godot Engine with this 2D car game where you run through city streets, avoid other vehicles, hit the run button to go fast  and finish first. Download the demo from itch.io!:)
+you are a player that has a target to reach the finish line as fast as possible by avoiding cars and aiming for the lowest time enjoy!
 
 
 ---
 
 ## Features
 
-Would you like to have control over how the physics are set up on your player? 
 
-* **Responsive Controls:** The Controls refer to both how the player reacts when you move it left/right but also how responsive or delayed the inputs you give the player a realistic feeling. In order to adjust these values just go into the properties of the player - srcipt file.
-* **Sound Effects:** Sound has been added to the game towards the end of development with both sound and music being included.
-* **Scoring System:** To encourage players to score high there has been implemented scoring systems in place within the game which encourage players to play more often.
-* **Time Tracking:** Time tracking can be accomplished with godot's superwaka-time add-on made specially for hack club :D
+
+* **Added Smooth Controls:** the controls of the player are very simple you use WASD for moving and i ensured animations of player are smooth and responsive to ensure that it meets the requirements
+* **Added Effects:** added a background sound and a reactive car sound that gets louder as player gets closer to the car to ensure a good experience
+* **Added aScoring System:** added a score system to help player aim for a higer score and adds a target to the game
+* **Used Time Tracking:** used super walkatime for godot which is made specially for hackclub !
 
 ---
 
-## Assets & Tools
+## Assets & Tools Used
 
-* **Engine:** Godot Engine
-* **Language:** GDScript (100% of code) 
-* **Art Style:** Top Down / Isometric Pixel Art City
+* **The Engine:** Used Godot Engine
+* **The Language:** Used GDScript 
+* **The Art Style:** 2D pixel art style top down game
 
 ---
 
 ## Project Structure
 
-Below are two example project directories for your reference:
+below are the project directories for easier navigation and undrestanding of the project:
 
-* `/Scenes` - The main game scene, player scene, User-Interface Scenes.
-* `/audio` - Background Music and Sound Effects.
-* `/graphics` - Art and sprites.
-* `/fonts` - User Interface text style.
+* `/Scenes` - this is the main scene with the level player and graphics sorted out
+* `/audio` - contains background music and car music added to the game
+* `/graphics` - has the graphics of the project and the art styles of the game
+* `/fonts` - has the fonts used in this project for better visuals
 
 ---
-
 ## Local Install & Execute
 
-To install locally for development, do the following:
+finally to downlaod or clone the repo use this code by pasting in terminal:
 
-1. Clone the repo using the following:
+1. Code to paste in terminal!:
    ```bash
    git clone [https://github.com/Omarfadalla/2ND-PROJECT.git](https://github.com/Omarfadalla/2ND-PROJECT.git)```
-
 
 Hope you enjoyed :)
